@@ -121,7 +121,7 @@ if scripts is None: scripts = find_scripts()
 
 setuptools.setup(
     name = package_name,
-    version = '0.0.1',
+    version = '0.0.2',
     packages = packages,
     scripts = scripts,
     url = 'http://jaberg.github.com/hyperopt-sklearn/',
@@ -148,5 +148,12 @@ setuptools.setup(
     license = 'BSD',
     package_data = package_data,
     include_package_data = True,
-    install_requires = ['NumPy==1.11.0', 'scipy', 'nose', 'hyperopt', 'scikit-learn'],
+    install_requires = [
+        'hyperopt',
+        'nose',
+        'NumPy==1.11.0',
+        'scikit-learn',
+        'scipy',
+        'xgboost',
+    ],
 )
